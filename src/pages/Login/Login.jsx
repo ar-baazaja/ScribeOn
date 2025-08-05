@@ -15,7 +15,14 @@ function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = () => {
-    alert(`Login clicked!\nEmail: ${email}\nPassword: ${password}\nRole: ${role}`);
+    if (role === "admin") {
+      localStorage.setItem("userRole", "admin");
+      localStorage.setItem("userEmail", email);
+      localStorage.setItem("userName", email.split('@')[0]); // Use email prefix as name
+      window.location.reload();
+    } else {
+      alert("Only admin can access the dashboard in this demo.");
+    }
   };
 
   return (
