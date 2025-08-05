@@ -29,6 +29,14 @@
   margin-bottom: 30px;
 }
 
+.scribeon-logo {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  filter: drop-shadow(0 0 16px rgba(166, 107, 255, 0.25));
+}
+
 .logo h1 {
   font-size: 42px;
   font-weight: 600;

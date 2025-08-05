@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import bgImage from "../../assets/login-bg.png";
+import logo from "../../assets/logo-white 1.png";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import InputField from "../../components/InputField/InputField";
@@ -28,19 +29,16 @@ function Login() {
       }}
     >
       <div className="logo">
-        <h1>Scribe9n</h1>
+        <img src={logo} alt="Scribe9n Logo" className="scribeon-logo" />
       </div>
-      
       <div className="login-card">
         <h2>Sign in to Dashboard</h2>
-
         <InputField
           type="email"
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-
         <InputField
           type={showPassword ? "text" : "password"}
           placeholder="Enter your password"
@@ -55,7 +53,6 @@ function Login() {
             </span>
           }
         />
-
         <RoleSelect value={role} onChange={(e) => setRole(e.target.value)} />
         <Button text="Login" onClick={handleLogin} />
       </div>
