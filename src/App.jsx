@@ -7,7 +7,7 @@ function App() {
   const userRole = localStorage.getItem("userRole");
   return (
     <div className="app-container">
-      {userRole === "admin" ? <Dashboard /> : <Login />}
+      {userRole === "employee" ? <Dashboard /> : <Login />}
     </div>
   );
 }

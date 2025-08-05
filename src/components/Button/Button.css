@@ -4,13 +4,13 @@
   padding: 14px;
   background: #2e1540;
   color: white;
-  border: 2px solid #836cbc;
+  border: 1px solid #a66bff;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(131, 108, 188, 0.15);
+  box-shadow: 0 0 10px rgba(166, 107, 255, 0.15);
   text-transform: none;
   letter-spacing: 0.5px;
   margin: 0 auto;
@@ -20,17 +20,17 @@
 
 .custom-button:hover {
   background: #3d1d54;
-  border-color: #a892ee;
-  box-shadow: 0 0 20px rgba(131, 108, 188, 0.25);
+  border-color: #8c57d5;
+  box-shadow: 0 0 20px rgba(166, 107, 255, 0.25);
   transform: translateY(-1px);
 }
 
 .custom-button:active {
   transform: translateY(0);
-  box-shadow: 0 0 10px rgba(131, 108, 188, 0.15);
+  box-shadow: 0 0 10px rgba(166, 107, 255, 0.15);
 }
 
 .custom-button:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #836cbc, 0 0 10px rgba(131, 108, 188, 0.15);
+  box-shadow: 0 0 0 2px rgba(166, 107, 255, 0.2), 0 0 10px rgba(166, 107, 255, 0.15);
 }
