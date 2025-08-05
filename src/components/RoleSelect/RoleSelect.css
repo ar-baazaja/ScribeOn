@@ -1,0 +1,38 @@
+.role-select {
+  width: 341px;
+  height: 47px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #a66bff;
+  color: white;
+  font-size: 14px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D'10'%20height%3D'6'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20fill%3D'%23a66bff'%20d%3D'M0%200l5%206%205-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 6px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+.role-select:focus {
+  outline: none;
+  border-color: #8c57d5;
+  box-shadow: 0 0 0 2px rgba(166, 107, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.role-select:hover {
+  border-color: #8c57d5;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.role-select option {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 8px;
+}
